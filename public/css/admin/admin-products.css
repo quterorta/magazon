@@ -1,0 +1,368 @@
+.admin_main_header {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 0px 0px 30px 0px;
+    color: #1d257a;
+    border-bottom: 3px solid #f19b38;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.admin_main_subheader {
+    display: inline-block;
+    color: #f19b38;
+    box-shadow: 0px 2px 0px 0px #1d257a;
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0px 0px 15px 0px;
+}
+
+
+.admin_products_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+}
+
+
+.admin_product_card__nonmoderated_product {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: red;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+}
+.admin_product_card__nonmoderated_product i {
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.admin_product_card {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    transition: all 0.2s ease;
+}
+.admin_product_card:hover {
+    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.admin_product_card__image {
+    height: 10vw;
+    width: 100%;
+}
+.admin_product_card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.admin_product_card__category {
+    text-align: left;
+}
+.admin_product_card__category__category_title,
+.admin_product_card__category__subcategory_title {
+    margin: 0;
+    color: black;
+}
+.admin_product_card__category__category_title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.admin_product_card__category__subcategory_title {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.admin_product_card__id_article {
+    text-align: center;
+}
+.admin_product_card__category__id {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.admin_product_card__category__id b {
+    color: #f19b38;
+    font-weight: 600;
+}
+.admin_product_card__category__article {
+    color: black;
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.admin_product_card__title {
+    text-align: center;
+}
+.admin_product_card__title a {
+    color: #f19b38;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+.admin_product_card__title a:hover {
+    box-shadow: 0px 2px 0px 0px #1d257a;
+}
+
+
+.admin_product_card__controll {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 10px 0px 10px;
+}
+.admin_product_card__controll__edit_btn {
+    text-decoration: none;
+    color: #1d257a;
+    font-size: 1.5rem;
+}
+.admin_product_card__controll__moderate_btn {
+    text-decoration: none;
+    color: rgb(0, 255, 0);
+    font-size: 1.5rem;
+}
+.admin_product_card__controll__non_moderate_btn {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+}
+.admin_product_card__controll__review_btn {
+    text-decoration: none;
+    color: #f19b38;
+    font-size: 1.5rem;
+}
+.admin_product_card__controll form {
+    display: inline-block;
+}
+.admin_product_card__controll__delete_btn {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 0;
+    background: 0;
+    margin: 0;
+}
+
+.admin_product_card__controll__edit_btn,
+.admin_product_card__controll__moderate_btn,
+.admin_product_card__controll__non_moderate_btn,
+.admin_product_card__controll__review_btn,
+.admin_product_card__controll__delete_btn {
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.admin_product_card__controll__edit_btn:hover {
+    color: #1d257a;
+}
+.admin_product_card__controll__moderate_btn:hover {
+    color: rgb(0, 255, 0);
+}
+.admin_product_card__controll__non_moderate_btn:hover {
+    color: rgb(255, 0, 0);
+}
+.admin_product_card__controll__review_btn:hover {
+    color: #f19b38;
+}
+.admin_product_card__controll__delete_btn:hover {
+    color: rgb(255, 0, 0);
+}
+.admin_product_card__controll__edit_btn:hover,
+.admin_product_card__controll__moderate_btn:hover,
+.admin_product_card__controll__non_moderate_btn:hover,
+.admin_product_card__controll__review_btn:hover,
+.admin_product_card__controll__delete_btn:hover {
+    opacity: 1;
+}
+
+
+.admin_page__paginate {
+    margin: 15px 0;
+    text-align: center;
+}
+.admin_page__paginate .product-pagination ul li {
+    list-style: none;
+    display: inline;
+}
+.admin_page__paginate .product-pagination ul {
+    padding: 0;
+}
+.admin_page__paginate .product-pagination li {
+    font-size: 0.8rem;
+    line-height: 1;
+    font-weight: 500;
+    padding: 3px 7px;
+    color: #1d257a;
+    background-color: #f19b38;
+    opacity: 0.75;
+    transition: all 0.15s ease;
+}
+.admin_page__paginate .product-pagination li:hover {
+    opacity: 1;
+}
+.admin_page__paginate .product-pagination li a {
+    padding: 0;
+    line-height: inherit;
+    text-decoration: none;
+    color: #1d257a;
+}
+.admin_page__paginate .product-pagination .active {
+    color: #f19b38;
+    background-color: #1d257a;
+    opacity: 1;
+}
+.admin_page__paginate .product-pagination .disabled {
+    color: #1d257a;
+    background-color: rgba(0, 0, 0, 0.05);
+    opacity: 1;
+}
+
+
+.admin_review_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    align-items: center;
+}
+
+.admin_review_card {
+    padding: 7px;
+    border: 2px solid #f19b38;
+    border-radius: 7px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.admin_review_card__info__id {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0;
+}
+.admin_review_card__info__id b {
+    color: #f19b38;
+    font-weight: 700;
+}
+
+.admin_review_card__info__product {
+    margin: 0;
+    color: #1d257a;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.admin_review_card__info__product a {
+    color: black;
+    transition: all 0.2s ease;
+}
+.admin_review_card__info__product a:hover {
+    color: #f19b38;
+}
+
+.admin_review_card__user p {
+    margin: 0;
+    color: #1d257a;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.admin_review_card__user a {
+    color: black;
+    transition: all 0.2s ease;
+}
+.admin_review_card__user a:hover {
+    color: #f19b38;
+}
+
+.admin_review_card__time {
+    color: #1d257a;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.admin_review_card__body {
+    border: 2px solid #f19b38;
+    padding: 7px;
+}
+.admin_review_card__body p {
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.admin_review_card__controll {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.admin_review_card__controll__edit_btn {
+    font-size: 1.5rem;
+    color: #1d257a;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.admin_review_card__controll__edit_btn {
+    color: #1d257a;
+    opacity: 1;
+    margin: 0px 10px 0px 0px;
+}
+.admin_review_card__controll form {
+    display: inline-block
+}
+.admin_review_card__controll__delete_btn {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    color: red;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.admin_review_card__controll__delete_btn:hover {
+    color: red;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

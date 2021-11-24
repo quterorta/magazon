@@ -1,0 +1,105 @@
+.admin_search_product_form {
+    padding: 7px;
+    border: 2px solid #f19b38;
+    border-radius: 5px;
+}
+
+
+.admin_search_product_form__hint {
+    margin: 0;
+    color: #1d257a;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.admin_search_product_form__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.admin_search_product_form__input {
+    margin: 0;
+    width: 100%;
+    border: 2px solid #f19b38;
+    padding: 3px 10px;
+    border-radius: 25px 0px 0px 25px;
+    color: black;
+    transition: all 0.2s ease;
+}
+.admin_search_product_form__input:active, .admin_search_product_form__input:focus {
+    outline: none;
+    border: 2px solid #1d257a;
+}
+.admin_search_product_form__btn {
+    margin: 0;
+    border: none;
+    background: #f19b38;
+    color: #1d257a;
+    border-radius: 0px 25px 25px 0px;
+    padding: 0px 10px;
+}
+
+.admin_search_product_form__header {
+    color: #1d257a;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+
+.admin_search_product_form__filter_param_container button {
+    border: 2px solid #f19b38;
+    color: #1d257a;
+    font-size: 1rem;
+    font-weight: 400;
+    background: none;
+    width: 100%;
+}
+.admin_search_product_form__filter_params {
+    background: rgba(0, 0, 0, 0.025);
+    padding: 15px 0px 10px 0px;
+    text-align: center;
+}
+
+.admin_search_product_form__filter_params label {
+    color: #1d257a;
+    font-weight: 500;
+}
+
+.admin_search_product_form__clear_btn {
+    color: red;
+    background: none;
+    border: 2px solid red;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1px 0;
+    width: 100%;
+    margin: 25px 0px 10px 0px;
+}
+.admin_search_product_form__main_btn {
+    color: #1d257a;
+    background: #f19b38;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

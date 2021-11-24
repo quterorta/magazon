@@ -1,0 +1,19 @@
+.container1,
+.scroller {
+    height: 100%;
+}
+
+.scroller {
+    overflow-y: scroll;
+}
+
+.scroller,
+.scroller-inner {
+    position: relative;
+}
+
+.container1 {
+    position: relative;
+    overflow: hidden;
+    background: #34495e;
+}
